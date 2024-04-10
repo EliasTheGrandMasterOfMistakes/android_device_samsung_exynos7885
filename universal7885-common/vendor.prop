@@ -63,3 +63,10 @@ ro.vendor.vibrator_hal.texture_tick_duration=60
 # Fingerprint
 ro.vendor.fingerprint.type?=rear
 ro.vendor.fingerprint.supports_gestures?=true
+
+# Battery Saving
+ro.vold.umsdirtyratio=20 
+ro.ril.disable.power.collapse=0 
+power.saving.mode=1
+pm.sleep_mode=1
+

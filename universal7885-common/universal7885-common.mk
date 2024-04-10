@@ -97,8 +97,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     NexusLauncherRelease  \
-    SettingsGoogle \
-    SystemUIGoogle
+    Settings \
+    SystemUI
 
 # Camera
 TARGET_BOARD_CAMERA_COUNT ?= 3

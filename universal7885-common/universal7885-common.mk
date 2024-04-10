@@ -93,6 +93,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     bluetooth.profile.sap.server.enabled=true \
     bluetooth.profile.tbs.server.enabled=true \
     bluetooth.profile.vc.server.enabled=true
+    
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    NexusLauncherRelease  \
+    SettingsGoogle \
+    SystemUIGoogle
 
 # Camera
 TARGET_BOARD_CAMERA_COUNT ?= 3

@@ -222,8 +222,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-# DEVICE_PACAKGE_OVERLAYS += $(LOCAL_PATH)/overlay-rom
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay \
+                            $(DEVICE_PATH)/overlay-evolution
+#DEVICE_PACAKGE_OVERLAYS += $(LOCAL_PATH)/overlay-rom
 
 # OMX
 PRODUCT_PACKAGES += \

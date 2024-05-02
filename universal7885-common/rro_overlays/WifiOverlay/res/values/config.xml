@@ -37,4 +37,6 @@
    <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
    <!-- Do not translate. Default access point SSID used for tethering -->
    <string name="wifi_tether_configure_ssid_default" translatable="false">EurekaAP</string>
+    <!-- Integer indicating maximum hardware supported client number of soft ap -->
+   <bool name="config_vendorWifi11axReadySupport">false</bool>
 </resources>

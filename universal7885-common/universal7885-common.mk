@@ -22,6 +22,11 @@ TARGET_DISABLE_POSTRENDER_CLEANUP := true
 PRODUCT_ENFORCE_RRO_TARGETS := framework-res SystemUI Bluetooth
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS := # leave it empty
 
+# Android NN
+PRODUCT_PACKAGES += android.hardware.neuralnetworks@1.3-service-armnn
+
+ARMNN_COMPUTE_CL_ENABLE := 1
+
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.service \

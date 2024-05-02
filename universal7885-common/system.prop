@@ -14,6 +14,8 @@ persist.sys.binary_xml=false
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
 debug.hwui.skia_atrace_enabled=false
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 
 # Blur
 ro.sf.blurs_are_expensive=1

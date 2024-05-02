@@ -1,2 +1,3 @@
 ## Bluetooth
 bluetooth.device.default_name=Galaxy A10
+ro.config.art_lowmem=true

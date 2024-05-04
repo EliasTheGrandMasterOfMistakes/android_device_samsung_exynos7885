@@ -148,12 +148,13 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.mapper@2.0-impl \
-    libgui_vendor
+#    libgui_vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.composer.hwc3-service.slsi \
     gralloc.$(TARGET_SOC) \
-    libion_exynos
+    libion
+#   libion_exynos
 
 # Health
 PRODUCT_PACKAGES += \
@@ -358,6 +359,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl.samsung \
     libsensorndkbridge
+
+PRODUCT_PACKAGES += \
+    libhwjpeg
 
 # Shims
 PRODUCT_PACKAGES += \

@@ -19,4 +19,3 @@ dalvik.vm.heapmaxfree=8m
 ro.cfg.kill_heaviest_task=true
 
 #LMK 
-ro.cfg.enable_reentry_lmk=true

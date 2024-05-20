@@ -1,3 +1,22 @@
 ## Bluetooth
 bluetooth.device.default_name=Galaxy A10
 ro.config.art_lowmem=true
+
+## Bluetooth
+bluetooth.device.default_name=Galaxy A10
+
+## Kang props from A10 stock rom
+
+# Dalvik vm
+dalvik.vm.heapgrowthlimit=128m
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
+
+# Kill heaviest task
+ro.cfg.kill_heaviest_task=true
+
+#LMK 
+ro.cfg.enable_reentry_lmk=true

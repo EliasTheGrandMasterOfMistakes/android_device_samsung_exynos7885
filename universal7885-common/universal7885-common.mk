@@ -25,11 +25,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS := # leave it empty
 # Android NN
 PRODUCT_PACKAGES += android.hardware.neuralnetworks@1.3-service-armnn
 
-# Enable OpenCL backend
 ARMNN_COMPUTE_CL_ENABLE := 1
-
-# Enable Android NN Debug
-ARMNN_DRIVER_DEBUG := 1 
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \

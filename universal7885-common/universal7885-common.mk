@@ -101,6 +101,20 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service
 endif
 
+
+# We will not use Angle Driver.
+USE_ANGLE ?= false
+
+PRODUCT_PACKAGES += \
+	libEGL_angle \
+	libGLESv1_CM_angle \
+	libGLESv2_angle
+
+PRODUCT_VENDOR_PROPERTIES += \
+	ro.hardware.egl = angle \
+	ro.hardware.egl_legacy = mali
+
+
 PRODUCT_PACKAGES += \
     libGrallocWrapper \
     libacryl

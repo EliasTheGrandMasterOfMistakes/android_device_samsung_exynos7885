@@ -65,7 +65,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ADDITIONAL_FLAGS += LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_CMDLINE := androidboot.init_fatal_reboot_target=recovery
+BOARD_KERNEL_CMDLINE := androidboot.init_fatal_reboot_target=recovery androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos7885
 KERNEL_SUPPORTS_LLVM_TOOLS := true
@@ -127,6 +127,10 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
     $(COMMON_PATH)/sepolicy/public
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     $(COMMON_PATH)/sepolicy/private
+
+
+BOARD_SEPOLICY_M4DEFS += \
+    sysfs_battery_supply=vendor_sysfs_battery_supply
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
